@@ -62,7 +62,7 @@ const AuthProvider = ({ children }) => {
   const [state, setState] = useState(initialState);
   const [isOpen, setIsOpen] = useState(false);
 
-  const urlBase ="http://localhost:8080/api/data"  // "https://carbonfoot.onrender.com/api/data";
+  const urlBase =import.meta.env.VITE_API_URL
 
   const handleModal = () => {
     setIsOpen(!isOpen);
