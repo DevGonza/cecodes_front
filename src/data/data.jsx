@@ -18,7 +18,7 @@ export const dataCombustibles = [
     name: "Combustibles",
     sub: [
       {
-        name: "Carbón (t)",
+        name: "Carbón",
         sub: [
           "Bagazo",
           "Borra de Café",
@@ -41,7 +41,7 @@ export const dataCombustibles = [
         fecha: fechas,
       },
       {
-        name: "Leña (t)",
+        name: "Leña",
         sub: [
           "Leña",
           "Madera Acacia",
@@ -56,7 +56,7 @@ export const dataCombustibles = [
         fecha: fechas,
       },
       {
-        name: "Biodiesel (gal)",
+        name: "Biodiesel",
         sub: [
           "Biodiesel Palma",
           "Bioetanol Anhidro",
@@ -66,7 +66,7 @@ export const dataCombustibles = [
         fecha: fechas,
       },
       {
-        name: "Diesel (gal)",
+        name: "Diesel",
         sub: [
           "Diésel B10 (Mezcla comercial)",
           "Diésel B2 (Sin mezcla Biodiesel)",
@@ -75,7 +75,7 @@ export const dataCombustibles = [
         fecha: fechas,
       },
       {
-        name: "Gasolina (gal)",
+        name: "Gasolina",
         sub: [
           "Fuel Oil #4 -Ecopetrol",
           "Gasolina E10 (Mezcla Comercial)",
@@ -84,17 +84,17 @@ export const dataCombustibles = [
         fecha: fechas,
       },
       {
-        name: "Kerosene (gal)",
+        name: "Kerosene",
         sub: ["Kerosene"],
         fecha: fechas,
       },
       {
-        name: "Biogas (m3)",
+        name: "Biogas",
         sub: ["Biogás Genérico", "Coke Gas Genérico"],
         fecha: fechas,
       },
       {
-        name: "Gas Natural (m3)",
+        name: "Gas Natural",
         sub: [
           "Gas Cupiagua",
           "Gas de Pozo Cupiagua",
@@ -112,7 +112,7 @@ export const dataCombustibles = [
         fecha: fechas,
       },
       {
-        name: "GLP (m3)",
+        name: "GLP",
         sub: ["GLP Genérico", "LPG Propano"],
         fecha: fechas,
       },

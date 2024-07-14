@@ -161,7 +161,20 @@ const SelectedCombustibles = ({
             });
           }}
         >
-          <option>{data.name}</option>
+          <option>
+            {data.name === "Carbón" || data.name === "Leña"
+              ? `${data.name} (t)`
+              : data.name === "Biodiesel" ||
+                data.name === "Diesel" ||
+                data.name === "Gasolina" ||
+                data.name === "Kerosene"
+              ? `${data.name} (gal)`
+              : data.name === "Biogas" ||
+                data.name === "Gas Natural" ||
+                data.name === "GLP"
+              ? `${data.name} (m³)`
+              : data.name}
+          </option>
           {data.sub.map((subData, index) => (
             <option key={index}>{subData}</option>
           ))}
