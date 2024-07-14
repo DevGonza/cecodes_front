@@ -1,0 +1,48 @@
+.border-blue-600 {
+  border-color: #242b57!important;
+}
+.bg-blue-600 {
+  background-color: #242b57!important;
+}
+.bg-blue-700 {
+  background-color: #242b57!important;
+}
+.bg-blue-800 {
+  background-color: #242b57!important;
+}
+.border-blue-500 {
+  border-color: #242b57!important;
+}
+.text-blue-500 {
+  color: #242b57!important;
+}
+.border-b-blue-600 {
+  border-bottom-color: #242b57!important;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Posiciona el tooltip arriba del texto */
+  left: 50%;
+  margin-left: -80px; /* Usa un margen negativo para centrar el tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,7 @@
+.meta-alcance1-input {
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  overflow: hidden;
+  min-width: 10px; 
+}
