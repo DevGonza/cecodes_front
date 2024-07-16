@@ -453,11 +453,11 @@ const SelectedEmisiones = ({
               type="number"
               min="0"
               className="rounded-md border-b-2 border-blue-400 w-full"
-              key={
-                state?.newValues?.emisiones?.[formatString(subItem)]?.[
-                  formatString(subFilter?.name)
-                ]?.fecha[fecha]
-              }
+              // key={
+              //   state?.newValues?.emisiones?.[formatString(subItem)]?.[
+              //     formatString(subFilter?.name)
+              //   ]?.fecha[fecha]
+              // }
               value={
                 state?.newValues?.emisiones?.[formatString(subItem)]?.[
                   formatString(subFilter?.name)
