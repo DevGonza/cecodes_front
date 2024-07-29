@@ -24,6 +24,7 @@ const SelectedActividadAgropecuaria = ({
   const [optionSeleted, setOptionSelected] = useState('');
   const [optionSeletedValue, setOptionSelectedValue] = useState({});
   const [currentSubCategory, setCurrentSubCategory] = useState(null);
+  const [isOpen, setIsOpen] = useState(true);
 
   const changeCombustibles2 = (
     event,
@@ -133,15 +134,12 @@ const SelectedActividadAgropecuaria = ({
       <h1
         className="font-bold border-b pb-2 h-20 cursor-pointer items-center flex justify-center"
         id={item2.id}
-        onClick={(e) => {
-          //console.log('item2.id', item2.id);
-          onView(e.target.id);
-        }}
+        onClick={() => onView(item2.id)}
       >
         {item2.name}
         <i className={`fas fa-sort-up ${item2.id}-icon duration-500 ml-1`}></i>
       </h1>
-
+  
       {item2.sub && (
         <select
           className="w-full text-center"
@@ -184,13 +182,9 @@ const SelectedActividadAgropecuaria = ({
           ))}
         </select>
       )}
-
+  
       <div
-        className={`${item2.id} ${
-          !state?.newValues?.alcance3?.actividadAgropecuaria?.[
-            formatString(itemName)
-          ]?.[formatString(item2?.key)]?.fecha && 'arrow'
-        }`}
+        className={`${item2.id} ${isOpen ? '' : 'arrow'}`}
       >
         {item2.fecha.map((fecha, i) => (
           <div className="mt-3" key={i}>
@@ -199,15 +193,7 @@ const SelectedActividadAgropecuaria = ({
               type="number"
               min="0"
               className="w-full rounded-md border-b-2 border-blue-400"
-              key={
-                state?.newValues?.alcance3?.actividadAgropecuaria?.[
-                  formatString(itemName)
-                ]?.[formatString(item2?.key)]?.fecha?.[fecha]
-              }
               value={
-                // currentSubCategory === item2.name
-                //   ? optionSeletedValue[fecha] || 0
-                //   : 0
                 state?.newValues?.alcance3?.actividadAgropecuaria?.[
                   formatString(itemName)
                 ]?.[formatString(item2?.key)]?.fecha?.[fecha]
@@ -329,6 +315,7 @@ const ActividadAgropecuaria = ({
   filter2.push(filtro[0]);
 
   const onView = (name) => {
+    console.log(name)
     document.querySelector(`.${name}`).classList.toggle('arrow');
     document.querySelector(`.${name}-icon`).classList.toggle('rotate-180');
   };

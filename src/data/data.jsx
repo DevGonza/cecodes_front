@@ -199,7 +199,7 @@ export const dataEmisionesFugitivas = [
         sub: [
           {
             id: "emisiones11",
-            name: "Orgánicos domésticos (Kg DQO)",
+            name: "Orgánicos domésticos (Kg DBO)",
             fecha: fechas,
             key: "organicosDomesticos",
           },

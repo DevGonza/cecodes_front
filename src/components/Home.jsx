@@ -59,7 +59,7 @@ const Home = () => {
         </div>
 
         <div className="grid justify-center mt-3">
-          <label className="font-semibold text-center">Indique la Planta</label>
+          <label className="font-semibold text-center">Indique la Sede</label>
           <div className="relative">
             <input
               type="text"
@@ -76,7 +76,7 @@ const Home = () => {
 
         <div className="grid justify-center mt-3">
           <label className="font-semibold">
-            Indica la ubicación a reportar:
+            Indica la ubicación de la Sede
           </label>
           <div className="relative">
             <input
@@ -94,7 +94,7 @@ const Home = () => {
 
         <div className="grid justify-center mt-5 mb-3">
           <label className="font-semibold mb-5 text-center">
-            Selecciona el año que abarcará
+            Seleccione el año de medición
           </label>
           <div className="flex justify-center gap-8">
             <select
